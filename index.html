@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripNest | Travel and Stay</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navBar">
+        <img src="./images/logo-light.svg" alt="logo" class="logo" />
+        <ul class="nav-links">
+          <li><a href="#" class="active">Popular Places</a></li>
+          <li><a href="#">Travel Outside</a></li>
+          <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-ellipsis-vertical" onClick="toggleMenu()"></i>
+      </nav>
+      <div class="container">
+        <h1>Find Your Next Stay</h1>
+        <div class="search-box">
+          <form>
+            <div class="location-input">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Where are you going?" />
+            </div>
+            <div>
+              <label for="check-in">Check In</label>
+              <input
+                type="text"
+                name="check-in"
+                id="check-in"
+                placeholder="Add Date" />
+            </div>
+            <div>
+              <label for="check-out">Check Out</label>
+              <input
+                type="text"
+                name="check-out"
+                id="check-out"
+                placeholder="Add Date" />
+            </div>
+            <div>
+              <label for="guest">Guest</label>
+              <input
+                type="text"
+                name="guest"
+                id="guest"
+                placeholder="Add Guest" />
+            </div>
+            <button type="submit">
+              <img src="./images/search.png" alt="search" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h2 class="sub-title">Exclusive Travel Deals</h2>
+      <section class="exclusives">
+        <div>
+          <img src="./images/image-1.png" alt="London image" />
+          <span>
+            <h3>London</h3>
+            <p>Starts at $400</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-2.png" alt="Switzerland image" />
+          <span>
+            <h3>Switzerland</h3>
+            <p>Starts at $350</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-3.png" alt="Maldives image" />
+          <span>
+            <h3>Maldives</h3>
+            <p>Starts at $300</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-4.png" alt="France image" />
+          <span>
+            <h3>France</h3>
+            <p>Starts at $400</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-5.png" alt="Moscow image" />
+          <span>
+            <h3>Moscow</h3>
+            <p>Starts at $300</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-6.png" alt="Netherlands image" />
+          <span>
+            <h3>Netherlands</h3>
+            <p>Starts at $400</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-7.png" alt="New York image" />
+          <span>
+            <h3>New York</h3>
+            <p>Starts at $500</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-8.png" alt="Chicago image" />
+          <span>
+            <h3>Chicago</h3>
+            <p>Starts at $500</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-9.png" alt="California image" />
+          <span>
+            <h3>California</h3>
+            <p>Starts at $500</p>
+          </span>
+        </div>
+        <div>
+          <img src="./images/image-10.png" alt="Shanghai image" />
+          <span>
+            <h3>Shanghai</h3>
+            <p>Starts at $400</p>
+          </span>
+        </div>
+      </section>
+      <!-- Trending Places -->
+      <h2 class="sub-title">Trending Places</h2>
+      <section class="trending">
+        <div>
+          <img src="./images/dubai.png" alt="Dubai Image" />
+          <h3>Dubai</h3>
+        </div>
+        <div>
+          <img src="./images/new-york.png" alt="New York Image" />
+          <h3>New York</h3>
+        </div>
+        <div>
+          <img src="./images/paris.png" alt="Paris Image" />
+          <h3>Paris</h3>
+        </div>
+        <div>
+          <img src="./images/new-delhi.png" alt="New Delhi Image" />
+          <h3>New Delhi</h3>
+        </div>
+      </section>
+      <section class="cta">
+        <h3>Sharing <br />Is Earning Now</h3>
+        <p>
+          Great opportunity to make money by sharing <br />your extra space.
+        </p>
+        <a href="#" class="cta-btn">Learn More</a>
+      </section>
+      <section class="travelers">
+        <h2 class="sub-title">Travelers Stories</h2>
+        <div class="stories">
+          <div>
+            <img src="./images/story-1.png" alt="A boat sailing on the sea" />
+            <q>Popular European countries with a budget of just $10,000</q>
+          </div>
+          <div>
+            <img src="./images/story-2.png" alt="A man stands by a mountain" />
+            <q>Traveled more than 100 countries in less than a year</q>
+          </div>
+          <div>
+            <img
+              src="./images/story-3.png"
+              alt="A woman with red backpack and wearing hat" />
+            <q>Best experience you get while travelling to Thailand</q>
+          </div>
+        </div>
+        <a href="#" class="stories-btn"
+          >View All
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+        <div class="about-msg">
+          <h3>About TripNest</h3>
+          <p>
+            TripNest is a travel and stay booking website. Your cozy corner of
+            the world for discovering unique stays and unforgettable
+            experiences. Whether you're planning a spontaneous weekend getaway
+            or an extended adventure, TripNest connects travelers with charming
+            homes, inspiring hosts, and destinations that feel like a perfect
+            fit. We're here to make travel personal, seamless, and full of
+            possibilities. From tranquil cabins to city escapes, every nest has
+            a story to tell and yours starts here.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <a href="#">
+        <i class="fa-brands fa-square-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <hr />
+      <p>Copyright &copy; 2025, TripNest</p>
+    </footer>
+    <script>
+      var navBar = document.getElementById("navBar");
+
+      function toggleMenu() {
+        navBar.classList.toggle("hidemenu");
+      }
+    </script>
+  </body>
+</html>
